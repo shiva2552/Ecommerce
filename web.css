@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* header page*/
+header{
+	background-color: #3A474E;
+	width: 100%;
+	height: 90px;
+	margin-bottom: 1em;
+   
+}
+h1{
+	text-align: left;
+	padding:25px;
+	float:left;
+	color:white;
+	font-weight: lighter;
+
+}
+.Ogcolor{
+	color: #FA7845;
+}
+header img {
+	float: right;
+	padding:35px 35px 0px 0px;
+}
+
+/* main page*/
+body{
+	background-color: #EDEEF1;
+}
+main{
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+
+figure{
+	
+	width: 23.4%;
+	max-width: 280px;
+	background-color: white;
+
+	
+}
+figure img  {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.shadow:hover {
+	box-shadow: 3px 3px 10px grey;
+	
+}
+
+
+figure:first-child, figure:nth-child(5){ 
+	margin-left: 0em;
+	margin-right: 0.75em;
+	margin-bottom: 2em;
+}
+
+
+figure:last-child, figure:nth-child(4){ 
+	margin-left: 0.75em;
+	margin-right: 0em;
+	margin-bottom: 2em;
+}
+
+figure:nth-child(2), figure:nth-child(6){
+	margin-left: 0.25em;
+	margin-right: 0.5em;
+	margin-bottom: 2em;
+}
+figure:nth-child(3),figure:nth-child(7){
+	margin-left: 0.5em;
+	margin-right: 0.25em;
+	margin-bottom: 2em;
+}
+/* button and paragraph*/
+.more{
+
+	background-color:#FF7844;
+	padding: 3% 2%;
+	position: relative;
+	left: 14px;
+	border-radius: 5px;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s 1s, opacity 1s ease-in;
+}
+.specialone{
+	top: 9px;
+}
+.specialtwo{
+	top:5px;
+}
+button{
+	color:white;
+	text-decoration: none;
+	font-size: 1vw;
+	
+}
+.shadow:hover button{
+	
+	visibility: visible;
+	opacity: 1;
+	transition: opacity 1s ease-in;
+	
+}
+.box{
+	width: 130px;
+	height: auto;
+	text-decoration: none;
+	color:black;
+	padding: 18px 20px;
+	background-color: white;
+	font-size: 1vw;
+	font-weight: bold;
+
+}
+
+/* page 770 max*/
+
+@media only screen and (max-width: 770px) and (min-width: 480px){
+	figure{
+		
+		width:47.5%;
+		max-width: 300px;
+	}
+
+	figure:nth-child(odd){ 
+		margin-left: 0em;
+		margin-right: 0.75em;
+		
+	}
+
+
+	figure:nth-child(even){ 
+		margin-left: 0.75em;
+		margin-right: 0em;
+		
+	}
+	button{
+		font-size: 2vw;
+	}
+	.box{
+		font-size: 2vw;
+	}
+	.specialone{
+		top: 11px;
+	}
+	.specialtwo{
+		top:1px;
+	}
+
+
+}
+/* page 480 max*/
+
+@media only screen and (max-width: 480px) {
+	
+	figure{
+
+		width:100%;
+		max-width: 400px;
+	}
+
+	figure:nth-child(odd), figure:nth-child(even){ 
+		margin-left: 0em;
+		margin-right: 0em;
+		
+	}
+	button{
+		font-size: 3.5vw;
+	}
+	.box{
+		font-size: 3.5vw;
+	}
+	.specialone{
+		top: 0px;
+	}
+	.specialtwo{
+		top:0px;
+	}
+	
+}
+/* footer page*/
+footer{
+	background-color: #EDEEF1;
+	width: 100%;
+	height: 20px;
+}
+
+
+
+
+
